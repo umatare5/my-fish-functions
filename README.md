@@ -14,14 +14,14 @@ Functions in my fish shell.
 
 - [fish shell](https://fishshell.com/)
 
-  | Name               | Installation Guide                                                                    |
-  | ------------------ | ------------------------------------------------------------------------------------- |
-  | Google Chrome      | [Link](https://www.google.co.jp/chrome)                                               |
-  | Docker Desktop     | [Link](https://www.docker.com/products/docker-desktop)                                |
-  | Wireshark          | [Link](https://www.wireshark.org/download.html)                                       |
-  | AWS CLI v2 (aws)   | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html) |
-  | Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                     |
-  | nload              | `brew install nload`                                                                  |
+  | Name                      | Installation Guide                                                                    |
+  | ------------------------- | ------------------------------------------------------------------------------------- |
+  | Google Chrome             | [Link](https://www.google.co.jp/chrome)                                               |
+  | Docker Desktop            | [Link](https://www.docker.com/products/docker-desktop)                                |
+  | Wireshark                 | [Link](https://www.wireshark.org/download.html)                                       |
+  | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html) |
+  | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                     |
+  | nload                     | `brew install nload`                                                                  |
 
 ## Installation
 
