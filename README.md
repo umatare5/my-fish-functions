@@ -49,17 +49,18 @@ omf install https://github.com/umatare5/fish-my-functions
 
 ### Development
 
-| Command | Description                    |
-| ------- | ------------------------------ |
-| dc      | `docker container` wrapper     |
-| di      | `docker image` wrapper         |
-| g       | `git` wrapper                  |
-| ga      | `git add` wrapper              |
-| gb      | `git branch` wrapper           |
-| gci     | `git commit --message` wrapper |
-| gco     | `git checkout` wrapper         |
-| gd      | `git diff` wrapper             |
-| gp      | `git push origin HEAD` wrapper |
+| Command | Description                                    |
+| ------- | ---------------------------------------------- |
+| dc      | `docker container` wrapper                     |
+| di      | `docker image` wrapper                         |
+| g       | `git` wrapper                                  |
+| ga      | `git add` wrapper                              |
+| gb      | `git branch` wrapper                           |
+| gci     | `git commit --message` wrapper                 |
+| gco     | `git checkout` wrapper                         |
+| gd      | `git diff` wrapper                             |
+| gl      | `git log --oneline --graph --decorate` wrapper |
+| gp      | `git push origin HEAD` wrapper                 |
 
 ### Networking
 
