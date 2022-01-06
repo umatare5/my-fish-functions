@@ -91,3 +91,4 @@ omf install https://github.com/umatare5/fish-my-functions
 | Command | Description         |
 | ------- | ------------------- |
 | tf      | `terraform` wrapper |
+| xx      | `exit` wrapper      |
