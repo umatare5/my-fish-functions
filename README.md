@@ -10,6 +10,20 @@ Functions that my fish-shell uses.
   <img src="https://badgen.net/github/license/umatare5/fish-my-functions" alt="license">
 </a>
 
+## Installation
+
+### [Fisher](https://github.com/jorgebucaran/fisher)
+
+```sh
+fisher install umatare5/fish-my-functions
+```
+
+### [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
+
+```sh
+omf install https://github.com/umatare5/fish-my-functions
+```
+
 ## Prerequisite
 
 - macOS Sierra 10.12 or later
@@ -25,20 +39,6 @@ Functions that my fish-shell uses.
   | nload                     | [Link](https://github.com/rolandriegel/nload): `brew install nload`                      |
   | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                |
   | tv                        | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv` |
-
-## Installation
-
-### [Fisher](https://github.com/jorgebucaran/fisher)
-
-```sh
-fisher install umatare5/fish-my-functions
-```
-
-### [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
-
-```sh
-omf install https://github.com/umatare5/fish-my-functions
-```
 
 ## Usage
 
