@@ -1,6 +1,6 @@
 # fish-my-functions
 
-Functions in my fish shell.
+Functions that my fish-shell uses.
 
 <a href="https://fishshell.com/">
   <img src="https://badgen.net/badge/fish-shell/plugin?icon=terminal" alt="fish-shell plugin">
@@ -12,16 +12,19 @@ Functions in my fish shell.
 
 ## Prerequisite
 
+- macOS Sierra 10.12 or later
 - [fish shell](https://fishshell.com/)
 
-  | Name                      | Installation Guide                                                                    |
-  | ------------------------- | ------------------------------------------------------------------------------------- |
-  | Google Chrome             | [Link](https://www.google.co.jp/chrome)                                               |
-  | Docker Desktop            | [Link](https://www.docker.com/products/docker-desktop)                                |
-  | Wireshark                 | [Link](https://www.wireshark.org/download.html)                                       |
-  | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html) |
-  | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                     |
-  | nload                     | `brew install nload`                                                                  |
+  | Name                      | Installation Guide                                                                       |
+  | ------------------------- | ---------------------------------------------------------------------------------------- |
+  | Google Chrome             | [Link](https://www.google.co.jp/chrome)                                                  |
+  | Docker Desktop            | [Link](https://www.docker.com/products/docker-desktop)                                   |
+  | Wireshark                 | [Link](https://www.wireshark.org/download.html)                                          |
+  | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html)    |
+  | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                        |
+  | nload                     | [Link](https://github.com/rolandriegel/nload): `brew install nload`                      |
+  | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                |
+  | tv                        | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv` |
 
 ## Installation
 
