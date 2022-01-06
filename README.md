@@ -85,3 +85,9 @@ omf install https://github.com/umatare5/fish-my-functions
 | ------- | ----------------------------------------------------------- |
 | glogin  | `gcloud auth login` and `application-default login` wrapper |
 | gtoken  | Show tokens issued by `glogin`                              |
+
+### Utility
+
+| Command | Description         |
+| ------- | ------------------- |
+| tf      | `terraform` wrapper |
