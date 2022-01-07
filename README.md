@@ -92,8 +92,8 @@ omf install https://github.com/umatare5/fish-my-functions
 
 ### Utility
 
-| Command | Description                                                                          |
-| ------- | ------------------------------------------------------------------------------------ |
-| tf      | `terraform` wrapper                                                                  |
-| xx      | `exit` wrapper                                                                       |
-| rnd     | Generate a string that includes lowercase, uppercase, numeric and special characters |
+| Command | Description                                                                      |
+| ------- | -------------------------------------------------------------------------------- |
+| tf      | `terraform` wrapper                                                              |
+| xx      | `exit` wrapper                                                                   |
+| rnd     | Generate a strings includes lowercase, uppercase, numeric and special characters |
