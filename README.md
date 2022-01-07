@@ -94,5 +94,7 @@ omf install https://github.com/umatare5/fish-my-functions
 
 | Command | Description                                                                      |
 | ------- | -------------------------------------------------------------------------------- |
+| ll      | `exa -l -g --icons` wrapper                                                      |
+| la      | `ll -a` wrapper                                                                  |
 | rnd     | Generate a strings includes lowercase, uppercase, numeric and special characters |
 | xx      | `exit` wrapper                                                                   |
