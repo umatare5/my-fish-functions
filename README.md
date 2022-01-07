@@ -41,6 +41,7 @@ omf install https://github.com/umatare5/fish-my-functions
   | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                 |
   | exa                       | [Link](https://github.com/ogham/exa#homebrew): `brew install exa`                         |
   | bat                       | [Link](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew): `brew install bat` |
+  | ripgrep                   | [Link](https://github.com/BurntSushi/ripgrep#installation): `brew install ripgrep`        |
   | tv                        | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv`  |
 
 ## Usage
@@ -98,5 +99,7 @@ omf install https://github.com/umatare5/fish-my-functions
 | ------- | -------------------------------------------------------------------------------- |
 | ll      | `exa -l -g --icons` wrapper                                                      |
 | la      | `ll -a` wrapper                                                                  |
+| see     | `bat --plain --paging never` wrapper                                             |
+| rep     | `rg --pretty` wrapper                                                            |
 | rnd     | Generate a strings includes lowercase, uppercase, numeric and special characters |
 | xx      | `exit` wrapper                                                                   |
