@@ -62,6 +62,7 @@ omf install https://github.com/umatare5/fish-my-functions
 | gci     | `git commit --message` wrapper                 |
 | gco     | `git checkout` wrapper                         |
 | gd      | `git diff` wrapper                             |
+| gdc     | `git diff --cached` wrapper                    |
 | gdl     | `git diff --name-only` wrapper                 |
 | gl      | `git log --oneline --graph --decorate` wrapper |
 | gp      | `git push origin HEAD` wrapper                 |
