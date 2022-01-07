@@ -69,35 +69,25 @@ omf install https://github.com/umatare5/fish-my-functions
 | gp      | `git push origin HEAD` wrapper                 |
 | gr      | `git remote` wrapper                           |
 
-### Networking
-
-| Command | Description                                 |
-| ------- | ------------------------------------------- |
-| bcon    | Show SSIDs detected on your Mac             |
-| gip     | Show your outbound global IP                |
-| nstats  | Show wireless network interface statistics  |
-| wlan    | Show the information of wireless connection |
-| wlog    | Show logs written by wireless interface     |
-| xping   | Run `ping` with timestamp                   |
-
-### AWS
-
-| Command | Description                    |
-| ------- | ------------------------------ |
-| alogin  | `aws sso login` wrapper        |
-| atoken  | Show tokens issued by `alogin` |
-
-### GCP
+### Public Cloud
 
 | Command | Description                                                 |
 | ------- | ----------------------------------------------------------- |
+| alogin  | `aws sso login` wrapper                                     |
+| atoken  | Show tokens issued by `alogin`                              |
 | glogin  | `gcloud auth login` and `application-default login` wrapper |
 | gtoken  | Show tokens issued by `glogin`                              |
+| tf      | `terraform` wrapper                                         |
 
-### Utility
+### Utilities
 
 | Command | Description                                                                      |
 | ------- | -------------------------------------------------------------------------------- |
-| tf      | `terraform` wrapper                                                              |
-| xx      | `exit` wrapper                                                                   |
+| bcon    | Show SSIDs detected on your Mac                                                  |
+| gip     | Show your outbound global IP                                                     |
+| nstats  | Show wireless network interface statistics                                       |
 | rnd     | Generate a strings includes lowercase, uppercase, numeric and special characters |
+| wlan    | Show the information of wireless connection                                      |
+| wlog    | Show logs written by wireless interface                                          |
+| xping   | Run `ping` with timestamp                                                        |
+| xx      | `exit` wrapper                                                                   |
