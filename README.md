@@ -29,17 +29,19 @@ omf install https://github.com/umatare5/fish-my-functions
 - macOS Sierra 10.12 or later
 - [fish shell](https://fishshell.com/)
 
-  | Name                      | Installation Guide                                                                       |
-  | ------------------------- | ---------------------------------------------------------------------------------------- |
-  | Google Chrome             | [Link](https://www.google.co.jp/chrome)                                                  |
-  | Docker Desktop            | [Link](https://www.docker.com/products/docker-desktop)                                   |
-  | Wireshark                 | [Link](https://www.wireshark.org/download.html)                                          |
-  | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html)    |
-  | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                        |
-  | Terraform                 | [Link](https://www.terraform.io/downloads): `brew install hashicorp/tap/terraform`       |
-  | nload                     | [Link](https://github.com/rolandriegel/nload): `brew install nload`                      |
-  | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                |
-  | tv                        | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv` |
+  | Name                      | Installation Guide                                                                        |
+  | ------------------------- | ----------------------------------------------------------------------------------------- |
+  | Google Chrome             | [Link](https://www.google.co.jp/chrome)                                                   |
+  | Docker Desktop            | [Link](https://www.docker.com/products/docker-desktop)                                    |
+  | Wireshark                 | [Link](https://www.wireshark.org/download.html)                                           |
+  | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html)     |
+  | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                         |
+  | Terraform                 | [Link](https://www.terraform.io/downloads): `brew install hashicorp/tap/terraform`        |
+  | nload                     | [Link](https://github.com/rolandriegel/nload): `brew install nload`                       |
+  | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                 |
+  | exa                       | [Link](https://github.com/ogham/exa#homebrew): `brew install exa`                         |
+  | bat                       | [Link](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew): `brew install bat` |
+  | tv                        | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv`  |
 
 ## Usage
 
