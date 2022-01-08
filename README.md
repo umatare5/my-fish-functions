@@ -88,7 +88,7 @@ omf install https://github.com/umatare5/fish-my-functions
 | ------- | ------------------------------------------- |
 | bcon    | Show SSIDs detected on your Mac             |
 | gip     | Show your outbound global IP                |
-| wstats  | Show wireless network interface statistics  |
+| wstat   | Show wireless network interface statistics  |
 | wlan    | Show the information of wireless connection |
 | wlog    | Show logs written by wireless interface     |
 | xping   | Run `ping` with timestamp                   |
