@@ -43,6 +43,7 @@ omf install https://github.com/umatare5/fish-my-functions
   | bat                       | [Link](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew): `brew install bat` |
   | ripgrep                   | [Link](https://github.com/BurntSushi/ripgrep#installation): `brew install ripgrep`        |
   | tv                        | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv`  |
+  | duf                       | [Link](https://github.com/muesli/duf#macos): `brew install duf`                           |
 
 ## Usage
 
@@ -101,5 +102,6 @@ omf install https://github.com/umatare5/fish-my-functions
 | la      | `ll -a` wrapper                                                                  |
 | see     | `bat --plain --paging never` wrapper                                             |
 | rep     | `rg --pretty` wrapper                                                            |
+| dfx     | `duf` wrapper                                                                    |
 | rnd     | Generate a strings includes lowercase, uppercase, numeric and special characters |
 | xx      | `exit` wrapper                                                                   |
