@@ -1,4 +1,4 @@
-# fish-my-functions
+# my-fish-functions
 
 Functions that my fish-shell uses.
 
@@ -6,8 +6,8 @@ Functions that my fish-shell uses.
   <img src="https://badgen.net/badge/fish-shell/plugin?icon=terminal" alt="fish-shell plugin">
 </a>
 
-<a href="https://github.com/umatare5/fish-my-functions/blob/master/LICENSE">
-  <img src="https://badgen.net/github/license/umatare5/fish-my-functions" alt="license">
+<a href="https://github.com/umatare5/my-fish-functions/blob/master/LICENSE">
+  <img src="https://badgen.net/github/license/umatare5/my-fish-functions" alt="license">
 </a>
 
 ## Installation
@@ -15,13 +15,13 @@ Functions that my fish-shell uses.
 ### [Fisher](https://github.com/jorgebucaran/fisher)
 
 ```sh
-fisher install umatare5/fish-my-functions
+fisher install umatare5/my-fish-functions
 ```
 
 ### [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
 
 ```sh
-omf install https://github.com/umatare5/fish-my-functions
+omf install https://github.com/umatare5/my-fish-functions
 ```
 
 ## Prerequisite
