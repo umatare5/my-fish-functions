@@ -100,7 +100,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | ------------ | -------------------------------------------------------------------------------- |
 | ll           | `exa -l -g --icons` wrapper                                                      |
 | la           | `ll -a` wrapper                                                                  |
-| cat          | `bat --plain --paging never` wrapper                                             |
+| cat          | `bat --plain --paging never` wrapper (Overwrite original `cat`)                  |
 | ag           | `rg --pretty` wrapper                                                            |
 | dfx          | `duf --hide-fs nullfs` wrapper                                                   |
 | rnd          | Generate a strings includes lowercase, uppercase, numeric and special characters |
