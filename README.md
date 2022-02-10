@@ -104,6 +104,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | ag           | `rg --pretty` wrapper                                                            |
 | dfx          | `duf --hide-fs nullfs` wrapper                                                   |
 | rnd          | Generate a strings includes lowercase, uppercase, numeric and special characters |
+| pa           | Find password in `~/.credentials/secrets.txt` wrapper                            |
 | xx           | `exit` wrapper                                                                   |
 | fish_ls_path | List PATH in fish                                                                |
 | fish_rm_path | Remove PATH from fish                                                            |
