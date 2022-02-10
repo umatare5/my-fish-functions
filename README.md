@@ -96,12 +96,14 @@ omf install https://github.com/umatare5/fish-my-functions
 
 ### Others
 
-| Command | Description                                                                      |
-| ------- | -------------------------------------------------------------------------------- |
-| ll      | `exa -l -g --icons` wrapper                                                      |
-| la      | `ll -a` wrapper                                                                  |
-| see     | `bat --plain --paging never` wrapper                                             |
-| rep     | `rg --pretty` wrapper                                                            |
-| dfx     | `duf --hide-fs nullfs` wrapper                                                   |
-| rnd     | Generate a strings includes lowercase, uppercase, numeric and special characters |
-| xx      | `exit` wrapper                                                                   |
+| Command      | Description                                                                      |
+| ------------ | -------------------------------------------------------------------------------- |
+| ll           | `exa -l -g --icons` wrapper                                                      |
+| la           | `ll -a` wrapper                                                                  |
+| see          | `bat --plain --paging never` wrapper                                             |
+| rep          | `rg --pretty` wrapper                                                            |
+| dfx          | `duf --hide-fs nullfs` wrapper                                                   |
+| rnd          | Generate a strings includes lowercase, uppercase, numeric and special characters |
+| xx           | `exit` wrapper                                                                   |
+| fish_ls_path | List PATH in fish                                                                |
+| fish_rm_path | Remove PATH from fish                                                            |
