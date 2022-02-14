@@ -1,7 +1,11 @@
-function pa --wraps='rg ~/.credentials/secrets.txt' --description 'alias pa=rg ~/.credentials/secrets.txt'
-  if test (count $argv) -eq 1
-    rg $argv ~/.credentials/secrets.txt;
-  else
+function pa --wraps='rg ~/.credentials/secrets.txt && rg ~/.envrc' --description 'alias pa=rg ~/.credentials/secrets.txt && rg ~/.envrc'
+  if ! test (count $argv) -eq 1
     echo "Abort: Please set a argument"
+  end
+  if test -f ~/.credentials/secrets.txt
+    rg $argv ~/.credentials/secrets.txt;
+  end
+  if test -f ~/.envrc
+    rg $argv ~/.envrc;
   end
 end
