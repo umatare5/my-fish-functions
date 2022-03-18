@@ -37,6 +37,7 @@ omf install https://github.com/umatare5/my-fish-functions
   | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html)     |
   | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                         |
   | Terraform                 | [Link](https://www.terraform.io/downloads): `brew install hashicorp/tap/terraform`        |
+  | coreutils                 | [Link](https://formulae.brew.sh/formula/coreutils) `brew install coreutils`               |
   | nload                     | [Link](https://github.com/rolandriegel/nload): `brew install nload`                       |
   | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                 |
   | exa                       | [Link](https://github.com/ogham/exa#homebrew): `brew install exa`                         |
@@ -101,6 +102,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | ll           | `exa -l -g --icons` wrapper                                                      |
 | la           | `ll -a` wrapper                                                                  |
 | cat          | `bat --plain --paging never` wrapper (Overwrite original `cat`)                  |
+| date         | `gdate` wrapper (Overwrite original `date`)                                      |
 | ag           | `rg --pretty` wrapper                                                            |
 | dfx          | `duf --hide-fs nullfs` wrapper                                                   |
 | rnd          | Generate a strings includes lowercase, uppercase, numeric and special characters |
