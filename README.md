@@ -79,21 +79,21 @@ omf install https://github.com/umatare5/my-fish-functions
 | Command | Description                                                 |
 | ------- | ----------------------------------------------------------- |
 | alogin  | `aws sso login` wrapper                                     |
-| atoken  | Show tokens issued by `alogin`                              |
+| atoken  | Print tokens issued by `alogin`                             |
 | glogin  | `gcloud auth login` and `application-default login` wrapper |
-| gtoken  | Show tokens issued by `glogin`                              |
+| gtoken  | Print tokens issued by `glogin`                             |
 | tf      | `terraform` wrapper                                         |
 
 ### Networking
 
-| Command | Description                                 |
-| ------- | ------------------------------------------- |
-| bcon    | Show SSIDs detected on your Mac             |
-| gip     | Show your outbound global IP                |
-| wstat   | Show wireless network interface statistics  |
-| wlan    | Show the information of wireless connection |
-| wlog    | Show logs written by wireless interface     |
-| xping   | Run `ping` with timestamp                   |
+| Command | Description                                  |
+| ------- | -------------------------------------------- |
+| bcon    | Print SSIDs detected on your Mac             |
+| gip     | Print your outbound global IP                |
+| wstat   | Print wireless network interface statistics  |
+| wlan    | Print the information of wireless connection |
+| wlog    | Print logs written by wireless interface     |
+| xping   | Run `ping` with timestamp                    |
 
 ### Others
 
@@ -107,7 +107,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | dfx          | `duf --hide-fs nullfs` wrapper                                                   |
 | rnd          | Generate a strings includes lowercase, uppercase, numeric and special characters |
 | pa           | Find password in `~/.credentials/secrets.txt` wrapper                            |
-| hosts        | Show hosts without comment-line and blank-line.                                  |
+| hosts        | Print hosts without comment-line and blank-line.                                 |
 | xx           | `exit` wrapper                                                                   |
 | fish_ls_path | List PATH in fish                                                                |
 | fish_rm_path | Remove PATH from fish                                                            |
