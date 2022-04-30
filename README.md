@@ -58,21 +58,22 @@ omf install https://github.com/umatare5/my-fish-functions
 
 ### Development
 
-| Command | Description                                    |
-| ------- | ---------------------------------------------- |
-| dc      | `docker container` wrapper                     |
-| di      | `docker image` wrapper                         |
-| g       | `git` wrapper                                  |
-| ga      | `git add` wrapper                              |
-| gb      | `git branch` wrapper                           |
-| gci     | `git commit --message` wrapper                 |
-| gco     | `git checkout` wrapper                         |
-| gd      | `git diff` wrapper                             |
-| gdc     | `git diff --cached` wrapper                    |
-| gdl     | `git diff --name-only` wrapper                 |
-| gl      | `git log --oneline --graph --decorate` wrapper |
-| gp      | `git push origin HEAD` wrapper                 |
-| gr      | `git remote` wrapper                           |
+| Command | Description                                                |
+| ------- | ---------------------------------------------------------- |
+| dc      | `docker container` wrapper                                 |
+| di      | `docker image` wrapper                                     |
+| g       | `git` wrapper                                              |
+| ga      | `git add` wrapper                                          |
+| gb      | `git branch` wrapper                                       |
+| gci     | `git commit --message` wrapper                             |
+| gco     | `git checkout` wrapper                                     |
+| gd      | `git diff` wrapper                                         |
+| gdc     | `git diff --cached` wrapper                                |
+| gdl     | `git diff --name-only` wrapper                             |
+| gl      | `git log --oneline --graph --decorate` wrapper             |
+| gp      | `git push origin HEAD` wrapper                             |
+| gpt     | `git push --tags origin` wrapper (Override original `gpt`) |
+| gr      | `git remote` wrapper                                       |
 
 ### Public Cloud
 
