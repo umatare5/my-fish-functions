@@ -77,13 +77,15 @@ omf install https://github.com/umatare5/my-fish-functions
 
 ### Public Cloud
 
-| Command | Description                                                 |
-| ------- | ----------------------------------------------------------- |
-| alogin  | `aws sso login` wrapper                                     |
-| atoken  | Print tokens issued by `alogin`                             |
-| glogin  | `gcloud auth login` and `application-default login` wrapper |
-| gtoken  | Print tokens issued by `glogin`                             |
-| tf      | `terraform` wrapper                                         |
+| Command   | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| alogin    | `aws sso login` wrapper                                     |
+| atoken    | Print tokens issued by `alogin`                             |
+| glogin    | `gcloud auth login` and `application-default login` wrapper |
+| gtoken    | Print tokens issued by `glogin`                             |
+| glist     | `gcloud config configurations list` wrapper                 |
+| gactivate | `gcloud config configurations activate` wrapper             |
+| tf        | `terraform` wrapper                                         |
 
 ### Networking
 
