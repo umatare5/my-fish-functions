@@ -37,7 +37,7 @@ omf install https://github.com/umatare5/my-fish-functions
   | AWS CLI v2 (aws)          | [Link](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html)     |
   | Google Cloud SDK (gcloud) | [Link](https://cloud.google.com/sdk/docs/install)                                         |
   | Terraform                 | [Link](https://www.terraform.io/downloads): `brew install hashicorp/tap/terraform`        |
-  | coreutils                 | [Link](https://formulae.brew.sh/formula/coreutils): `brew install coreutils`               |
+  | coreutils                 | [Link](https://formulae.brew.sh/formula/coreutils): `brew install coreutils`              |
   | nload                     | [Link](https://github.com/rolandriegel/nload): `brew install nload`                       |
   | jq                        | [Link](https://github.com/stedolan/jq): `brew install jq`                                 |
   | exa                       | [Link](https://github.com/ogham/exa#homebrew): `brew install exa`                         |
@@ -85,6 +85,10 @@ omf install https://github.com/umatare5/my-fish-functions
 | gtoken    | Print tokens issued by `glogin`                             |
 | glist     | `gcloud config configurations list` wrapper                 |
 | gactivate | `gcloud config configurations activate` wrapper             |
+| gclist    | `gcloud compute instance list` wrapper                      |
+| gcstop    | `gcloud compute instance stop` wrapper                      |
+| gcstart   | `gcloud compute instance start` wrapper                     |
+| gcssh     | `gcloud compute ssh --tunnel-through-iap` wrapper           |
 | tf        | `terraform` wrapper                                         |
 
 ### Networking
