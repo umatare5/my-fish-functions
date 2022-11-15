@@ -71,6 +71,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | gd      | `git diff` wrapper                                         |
 | gdc     | `git diff --cached` wrapper                                |
 | gdl     | `git diff --name-only` wrapper                             |
+| gj      | `git jump` wrapper                                         |
 | gl      | `git log --graph --format --date --decorate-refs` wrapper  |
 | gp      | `git push origin HEAD` wrapper                             |
 | gpt     | `git push --tags origin` wrapper (Override original `gpt`) |
