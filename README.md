@@ -66,11 +66,12 @@ omf install https://github.com/umatare5/my-fish-functions
 | ga      | `git add` wrapper                                          |
 | gb      | `git branch` wrapper                                       |
 | gci     | `git commit --message` wrapper                             |
+| gcl     | `git clone --filter=blob:none` wrapper                     |
 | gco     | `git checkout` wrapper                                     |
 | gd      | `git diff` wrapper                                         |
 | gdc     | `git diff --cached` wrapper                                |
 | gdl     | `git diff --name-only` wrapper                             |
-| gl      | `git log --oneline --graph --decorate` wrapper             |
+| gl      | `git log --graph --format --date --decorate-refs` wrapper  |
 | gp      | `git push origin HEAD` wrapper                             |
 | gpt     | `git push --tags origin` wrapper (Override original `gpt`) |
 | gr      | `git remote` wrapper                                       |
