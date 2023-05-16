@@ -15,3 +15,11 @@ function grevchange -a serviceName -a revisionName -a regionName --description '
     --region $REGION_NAME \
     --to-revisions $REVISION_NAME=100;
 end
+
+function _has_over_two_arguments
+  test (count $argv) -gt 1; and true; or false;
+end
+
+function _gcloud_select_region_name -a regionName
+  test $regionName; and echo $regionName; or echo "asia-northeast1";
+end

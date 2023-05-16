@@ -16,3 +16,11 @@ function gidelete -a projectId -a serviceName -a shaDigest -a locationName --des
     $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME@sha256:$SHA_DIGEST \
     --force-delete-tags;
 end
+
+function _has_over_two_arguments
+  test (count $argv) -gt 1; and true; or false;
+end
+
+function _gcloud_select_gcr_location_name -a locationName
+  test $locationName; and echo $locationName; or echo "asia.gcr.io";
+end

@@ -13,3 +13,11 @@ function gilist -a projectId -a serviceName -a locationName --description 'alias
 
   gcloud container images list-tags $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME;
 end
+
+function _has_over_two_arguments
+  test (count $argv) -gt 1; and true; or false;
+end
+
+function _gcloud_select_gcr_location_name -a locationName
+  test $locationName; and echo $locationName; or echo "asia.gcr.io";
+end
