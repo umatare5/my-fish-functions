@@ -80,19 +80,26 @@ omf install https://github.com/umatare5/my-fish-functions
 
 ### Public Cloud
 
-| Command   | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| alogin    | `aws sso login` wrapper                                     |
-| atoken    | Print tokens issued by `alogin`                             |
-| glogin    | `gcloud auth login` and `application-default login` wrapper |
-| gtoken    | Print tokens issued by `glogin`                             |
-| glist     | `gcloud config configurations list` wrapper                 |
-| gactivate | `gcloud config configurations activate` wrapper             |
-| gclist    | `gcloud compute instance list` wrapper                      |
-| gcstop    | `gcloud compute instance stop` wrapper                      |
-| gcstart   | `gcloud compute instance start` wrapper                     |
-| gcssh     | `gcloud compute ssh --tunnel-through-iap` wrapper           |
-| tf        | `terraform` wrapper                                         |
+| Command    | Description                                                 |
+| ---------- | ----------------------------------------------------------- |
+| alogin     | `aws sso login` wrapper                                     |
+| atoken     | Print tokens issued by `alogin`                             |
+| glogin     | `gcloud auth login` and `application-default login` wrapper |
+| gtoken     | Print tokens issued by `glogin`                             |
+| glist      | `gcloud config configurations list` wrapper                 |
+| gactivate  | `gcloud config configurations activate` wrapper             |
+| gclist     | `gcloud compute instance list` wrapper                      |
+| gcstop     | `gcloud compute instance stop` wrapper                      |
+| gcstart    | `gcloud compute instance start` wrapper                     |
+| gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper           |
+| grevchange | `gcloud run services update-traffic --to-revisions` wrapper |
+| grevdelete | `gcloud run revisions delete` wrapper                       |
+| grevlatest | `gcloud run services update-traffic --to-latest` wrapper    |
+| grevlist   | `gcloud run revisions list` wrapper                         |
+| grevshow   | `gcloud run revisions describe` wrapper                     |
+| grlist     | `gcloud run services list` wrapper                          |
+| grshow     | `gcloud run services describe` wrapper                      |
+| tf         | `terraform` wrapper                                         |
 
 ### Networking
 
