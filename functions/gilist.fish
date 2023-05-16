@@ -1,4 +1,4 @@
-function gilist -a projectId -a imageName -a locationName --description 'alias gilist=gcloud container images list-tags locationName/gcpProject/imageName'
+function gilist -a projectId -a imageName -a locationName --description 'alias gilist=gcloud container images list-tags locationName/projectId/imageName'
 
   # Validation
   if ! _has_over_two_arguments $argv
