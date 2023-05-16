@@ -94,7 +94,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper           |
 | grevchange | `gcloud run services update-traffic --to-revisions` wrapper |
 | grevdelete | `gcloud run revisions delete` wrapper                       |
-| grevlatest | `gcloud run services update-traffic --to-latest` wrapper    |
+| grevrenew  | `gcloud run services update-traffic --to-latest` wrapper    |
 | grevlist   | `gcloud run revisions list` wrapper                         |
 | grevshow   | `gcloud run revisions describe` wrapper                     |
 | grlist     | `gcloud run services list` wrapper                          |

@@ -1,8 +1,8 @@
-function grevlatest -a serviceName -a regionName --description 'alias grevlatest=gcloud run services update-traffic serviceName --region regionName --to-latest'
+function grevrenew -a serviceName -a regionName --description 'alias grevrenew=gcloud run services update-traffic serviceName --region regionName --to-latest'
 
   # Validation
   if ! _has_over_one_arguments $argv
-    set_color red; echo "Syntax failed: grevlatest serviceName regionName"
+    set_color red; echo "Syntax failed: grevrenew serviceName regionName"
     return 1
   end
 
