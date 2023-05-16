@@ -1,7 +1,7 @@
 function grevdelete -a revisionName -a regionName --description 'alias grevdelete=gcloud run revisions delete revisionName --region regionName'
 
   # Validation
-  if ! _has_over_two_arguments $argv
+  if ! _has_over_one_arguments $argv
     set_color red; echo "Syntax failed: grevdelete revisionName regionName"
     return 1
   end
