@@ -11,6 +11,6 @@ function grevdelete -a serviceName -a revisionName -a regionName --description '
   set SERVICE_NAME  $serviceName
   set REGION_NAME   (_gcloud_select_region_name $regionName)
 
-  echo "Running 'gcloud run revisions delete $SERVICE_NAME $REVISION_NAME --region $REGION_NAME' ..."
-  gcloud run revisions delete $SERVICE_NAME $REVISION_NAME --region $REGION_NAME;
+  echo "Running 'gcloud run revisions delete $SERVICE_NAME --region $REGION_NAME $REVISION_NAME' ..."
+  gcloud run revisions delete $SERVICE_NAME --region $REGION_NAME $REVISION_NAME;
 end
