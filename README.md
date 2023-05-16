@@ -2,11 +2,7 @@
 
 Functions that my fish-shell uses.
 
-<a href="https://fishshell.com/">
-  <img src="https://badgen.net/badge/fish-shell/plugin?icon=terminal" alt="fish-shell plugin">
-</a>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/umatare5/my-fish-functions/blob/main/LICENSE)
+<a href="https://fishshell.com/"><img src="https://badgen.net/badge/fish-shell/plugin?icon=terminal" alt="fish-shell plugin"></a>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/umatare5/my-fish-functions/blob/main/LICENSE)
 
 ## Installation
 
