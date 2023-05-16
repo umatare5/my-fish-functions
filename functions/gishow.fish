@@ -12,9 +12,6 @@ function gishow -a projectId -a serviceName -a shaDigest -a locationName --descr
   set SHA_DIGEST    $shaDigest
   set LOCATION_NAME (_gcloud_select_gcr_location_name $locationName)
 
-  echo \
-    "Running 'gcloud container images describe $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME@sha256:$SHA_DIGEST' ..."
-
   gcloud container images describe \
     $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME@sha256:$SHA_DIGEST;
 end

@@ -10,6 +10,5 @@ function grshow -a serviceName -a regionName --description 'alias grshow=gcloud 
   set SERVICE_NAME $serviceName
   set REGION_NAME  (_gcloud_select_region_name $regionName)
 
-  echo "Running 'gcloud run services describe $SERVICE_NAME --region $REGION_NAME' ..."
   gcloud run services describe $SERVICE_NAME --region $REGION_NAME;
 end

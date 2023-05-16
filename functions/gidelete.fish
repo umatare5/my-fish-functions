@@ -12,9 +12,6 @@ function gidelete -a projectId -a serviceName -a shaDigest -a locationName --des
   set SHA_DIGEST    $shaDigest
   set LOCATION_NAME (_gcloud_select_gcr_location_name $locationName)
 
-  echo \
-    "Running 'gcloud container images delete $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME@sha256:$SHA_DIGEST --force-delete-tags' ..."
-
   gcloud container images delete \
     $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME@sha256:$SHA_DIGEST \
     --force-delete-tags;

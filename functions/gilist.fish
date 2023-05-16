@@ -11,6 +11,5 @@ function gilist -a projectId -a serviceName -a locationName --description 'alias
   set IMAGE_NAME    $serviceName
   set LOCATION_NAME (_gcloud_select_gcr_location_name $locationName)
 
-  echo "Running 'gcloud container images list-tags $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME' ..."
   gcloud container images list-tags $LOCATION_NAME/$PROJECT_ID/$IMAGE_NAME;
 end

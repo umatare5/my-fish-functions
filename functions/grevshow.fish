@@ -10,6 +10,5 @@ function grevshow -a revisionName -a regionName --description 'alias grevshow=gc
   set REVISION_NAME $revisionName
   set REGION_NAME   (_gcloud_select_region_name $regionName)
 
-  echo "Running 'gcloud run revisions describe $REVISION_NAME --region $REGION_NAME' ..."
   gcloud run revisions describe $REVISION_NAME --region $REGION_NAME;
 end

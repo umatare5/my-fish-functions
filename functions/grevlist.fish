@@ -10,6 +10,5 @@ function grevlist -a serviceName -a regionName --description 'alias grevlist=gcl
   set SERVICE_NAME $serviceName
   set REGION_NAME  (_gcloud_select_region_name $regionName)
 
-  echo "Running 'gcloud run revisions list --service $SERVICE_NAME --region $REGION_NAME' ..."
   gcloud run revisions list --service $SERVICE_NAME --region $REGION_NAME;
 end

@@ -10,6 +10,7 @@ function grevrenew -a serviceName -a regionName --description 'alias grevrenew=g
   set SERVICE_NAME $serviceName
   set REGION_NAME  (_gcloud_select_region_name $regionName)
 
-  echo "Running 'gcloud run services update-traffic $SERVICE_NAME --region $REGION_NAME --to-latest' ..."
-  gcloud run services update-traffic $SERVICE_NAME --region $REGION_NAME --to-latest;
+  gcloud run services update-traffic \
+    $SERVICE_NAME --region \
+    $REGION_NAME --to-latest;
 end
