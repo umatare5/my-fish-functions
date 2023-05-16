@@ -6,9 +6,7 @@ Functions that my fish-shell uses.
   <img src="https://badgen.net/badge/fish-shell/plugin?icon=terminal" alt="fish-shell plugin">
 </a>
 
-<a href="https://github.com/umatare5/my-fish-functions/blob/main/LICENSE">
-  <img src="https://badgen.net/github/license/umatare5/my-fish-functions" alt="license">
-</a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/umatare5/my-fish-functions/blob/main/LICENSE)
 
 ## Installation
 
