@@ -56,6 +56,7 @@ omf install https://github.com/umatare5/my-fish-functions
 | Command | Description                                                |
 | ------- | ---------------------------------------------------------- |
 | dc      | `docker container` wrapper                                 |
+| do      | `docker run --rm --entrypoint ""` wrapper                  |
 | di      | `docker image` wrapper                                     |
 | g       | `git` wrapper                                              |
 | ga      | `git add` wrapper                                          |
