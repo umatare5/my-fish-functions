@@ -1,8 +1,8 @@
-function gilist -a projectId -a serviceName -a locationName --description 'alias gilist=gcloud container images list-tags locationName/projectId/serviceName'
+function runimlist -a projectId -a serviceName -a locationName --description 'alias runimlist=gcloud container images list-tags locationName/projectId/serviceName'
 
   # Validation
   if ! _has_over_two_arguments $argv
-    set_color red; echo "Syntax failed: gilist projectId serviceName locationName"
+    set_color red; echo "Syntax failed: runimlist projectId serviceName locationName"
     return 1
   end
 

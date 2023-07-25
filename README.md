@@ -75,10 +75,21 @@ omf install https://github.com/umatare5/my-fish-functions
 
 ### Public Cloud
 
+| Command | Description         |
+| ------- | ------------------- |
+| tf      | `terraform` wrapper |
+
+### Public Cloud: AWS
+
+| Command | Description                     |
+| ------- | ------------------------------- |
+| alogin  | `aws sso login` wrapper         |
+| atoken  | Print tokens issued by `alogin` |
+
+### Public Cloud: GCP
+
 | Command    | Description                                                 |
 | ---------- | ----------------------------------------------------------- |
-| alogin     | `aws sso login` wrapper                                     |
-| atoken     | Print tokens issued by `alogin`                             |
 | glogin     | `gcloud auth login` and `application-default login` wrapper |
 | gtoken     | Print tokens issued by `glogin`                             |
 | glist      | `gcloud config configurations list` wrapper                 |
@@ -87,17 +98,16 @@ omf install https://github.com/umatare5/my-fish-functions
 | gcstop     | `gcloud compute instance stop` wrapper                      |
 | gcstart    | `gcloud compute instance start` wrapper                     |
 | gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper           |
-| gilist     | `gcloud container images list-tags` wrapper                 |
-| gishow     | `gcloud container images describe` wrapper                  |
-| gidelete   | `gcloud container images delete` wrapper                    |
-| grevchange | `gcloud run services update-traffic --to-revisions` wrapper |
-| grevdelete | `gcloud run revisions delete` wrapper                       |
-| grevrenew  | `gcloud run services update-traffic --to-latest` wrapper    |
-| grevlist   | `gcloud run revisions list` wrapper                         |
-| grevshow   | `gcloud run revisions describe` wrapper                     |
-| grlist     | `gcloud run services list` wrapper                          |
-| grshow     | `gcloud run services describe` wrapper                      |
-| tf         | `terraform` wrapper                                         |
+| runlist    | `gcloud run services list` wrapper                          |
+| runshow    | `gcloud run services describe` wrapper                      |
+| runupdate  | `gcloud run services update-traffic --to-latest` wrapper    |
+| runimlist  | `gcloud container images list-tags` wrapper                 |
+| runimshow  | `gcloud container images describe` wrapper                  |
+| runimdel   | `gcloud container images delete` wrapper                    |
+| runrevlist | `gcloud run revisions list` wrapper                         |
+| runrevshow | `gcloud run revisions describe` wrapper                     |
+| runrevch   | `gcloud run services update-traffic --to-revisions` wrapper |
+| runrevdel  | `gcloud run revisions delete` wrapper                       |
 
 ### Networking
 

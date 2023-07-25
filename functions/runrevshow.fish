@@ -1,8 +1,8 @@
-function grevshow -a revisionName -a regionName --description 'alias grevshow=gcloud run revisions describe revisionName --region regionName'
+function runrevshow -a revisionName -a regionName --description 'alias runrevshow=gcloud run revisions describe revisionName --region regionName'
 
   # Validation
   if ! _has_over_one_arguments $argv
-    set_color red; echo "Syntax failed: grevshow revisionName regionName"
+    set_color red; echo "Syntax failed: runrevshow revisionName regionName"
     return 1
   end
 

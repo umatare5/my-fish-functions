@@ -1,8 +1,8 @@
-function grevchange -a serviceName -a revisionName -a regionName --description 'alias grevchange=gcloud run services update-traffic serviceName --region regionName --to-revisions revisionName=100'
+function runrevch -a serviceName -a revisionName -a regionName --description 'alias runrevch=gcloud run services update-traffic serviceName --region regionName --to-revisions revisionName=100'
 
   # Validation
   if ! _has_over_two_arguments $argv
-    set_color red; echo "Syntax failed: grevchange serviceName revisionName regionName"
+    set_color red; echo "Syntax failed: runrevch serviceName revisionName regionName"
     return 1
   end
 

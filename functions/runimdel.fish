@@ -1,8 +1,8 @@
-function gidelete -a projectId -a serviceName -a shaDigest -a locationName --description 'alias gidelete=gcloud container images delete locationName/projectId/serviceName@sha256:shaDigest'
+function runimdel -a projectId -a serviceName -a shaDigest -a locationName --description 'alias runimdel=gcloud container images delete locationName/projectId/serviceName@sha256:shaDigest'
 
   # Validation
   if ! _has_over_two_arguments $argv
-    set_color red; echo "Syntax failed: gidelete projectId serviceName shaDigest locationName"
+    set_color red; echo "Syntax failed: runimdel projectId serviceName shaDigest locationName"
     return 1
   end
 

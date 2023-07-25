@@ -1,8 +1,8 @@
-function grevrenew -a serviceName -a regionName --description 'alias grevrenew=gcloud run services update-traffic serviceName --region regionName --to-latest'
+function runshow -a serviceName -a regionName --description 'alias runshow=gcloud run services describe --service serviceName --region regionName'
 
   # Validation
   if ! _has_over_one_arguments $argv
-    set_color red; echo "Syntax failed: grevrenew serviceName regionName"
+    set_color red; echo "Syntax failed: runshow serviceName regionName"
     return 1
   end
 
@@ -10,9 +10,7 @@ function grevrenew -a serviceName -a regionName --description 'alias grevrenew=g
   set SERVICE_NAME $serviceName
   set REGION_NAME  (_gcloud_select_region_name $regionName)
 
-  gcloud run services update-traffic \
-    $SERVICE_NAME --region \
-    $REGION_NAME --to-latest;
+  gcloud run services describe $SERVICE_NAME --region $REGION_NAME;
 end
 
 function _has_over_one_arguments

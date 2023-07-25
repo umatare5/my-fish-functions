@@ -1,8 +1,8 @@
-function gishow -a projectId -a serviceName -a shaDigest -a locationName --description 'alias gishow=gcloud container images describe locationName/projectId/serviceName@sha256:shaDigest'
+function runimshow -a projectId -a serviceName -a shaDigest -a locationName --description 'alias runimshow=gcloud container images describe locationName/projectId/serviceName@sha256:shaDigest'
 
   # Validation
   if ! _has_over_two_arguments $argv
-    set_color red; echo "Syntax failed: gishow projectId serviceName shaDigest locationName"
+    set_color red; echo "Syntax failed: runimshow projectId serviceName shaDigest locationName"
     return 1
   end
 

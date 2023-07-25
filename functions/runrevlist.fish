@@ -1,8 +1,8 @@
-function grevlist -a serviceName -a regionName --description 'alias grevlist=gcloud run revisions list --service serviceName --region regionName'
+function runrevlist -a serviceName -a regionName --description 'alias runrevlist=gcloud run revisions list --service serviceName --region regionName'
 
   # Validation
   if ! _has_over_one_arguments $argv
-    set_color red; echo "Syntax failed: grevlist serviceName regionName"
+    set_color red; echo "Syntax failed: runrevlist serviceName regionName"
     return 1
   end
 

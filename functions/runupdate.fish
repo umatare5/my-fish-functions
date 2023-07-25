@@ -1,8 +1,8 @@
-function grshow -a serviceName -a regionName --description 'alias grshow=gcloud run services describe --service serviceName --region regionName'
+function runupdate -a serviceName -a regionName --description 'alias runupdate=gcloud run services update-traffic serviceName --region regionName --to-latest'
 
   # Validation
   if ! _has_over_one_arguments $argv
-    set_color red; echo "Syntax failed: grshow serviceName regionName"
+    set_color red; echo "Syntax failed: runupdate serviceName regionName"
     return 1
   end
 
@@ -10,7 +10,9 @@ function grshow -a serviceName -a regionName --description 'alias grshow=gcloud 
   set SERVICE_NAME $serviceName
   set REGION_NAME  (_gcloud_select_region_name $regionName)
 
-  gcloud run services describe $SERVICE_NAME --region $REGION_NAME;
+  gcloud run services update-traffic \
+    $SERVICE_NAME --region \
+    $REGION_NAME --to-latest;
 end
 
 function _has_over_one_arguments
