@@ -88,26 +88,27 @@ omf install https://github.com/umatare5/my-fish-functions
 
 ### Public Cloud: GCP
 
-| Command    | Description                                                 |
-| ---------- | ----------------------------------------------------------- |
-| glogin     | `gcloud auth login` and `application-default login` wrapper |
-| gtoken     | Print tokens issued by `glogin`                             |
-| glist      | `gcloud config configurations list` wrapper                 |
-| gactivate  | `gcloud config configurations activate` wrapper             |
-| gclist     | `gcloud compute instance list` wrapper                      |
-| gcstop     | `gcloud compute instance stop` wrapper                      |
-| gcstart    | `gcloud compute instance start` wrapper                     |
-| gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper           |
-| runlist    | `gcloud run services list` wrapper                          |
-| runshow    | `gcloud run services describe` wrapper                      |
-| runupdate  | `gcloud run services update-traffic --to-latest` wrapper    |
-| runimlist  | `gcloud container images list-tags` wrapper                 |
-| runimshow  | `gcloud container images describe` wrapper                  |
-| runimdel   | `gcloud container images delete` wrapper                    |
-| runrevlist | `gcloud run revisions list` wrapper                         |
-| runrevshow | `gcloud run revisions describe` wrapper                     |
-| runrevch   | `gcloud run services update-traffic --to-revisions` wrapper |
-| runrevdel  | `gcloud run revisions delete` wrapper                       |
+| Command    | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| glogin     | `gcloud auth login` and `application-default login` wrapper      |
+| gtoken     | Print tokens issued by `glogin`                                  |
+| glist      | `gcloud config configurations list` wrapper                      |
+| gactivate  | `gcloud config configurations activate` wrapper                  |
+| gclist     | `gcloud compute instance list` wrapper                           |
+| gcstop     | `gcloud compute instance stop` wrapper                           |
+| gcstart    | `gcloud compute instance start` wrapper                          |
+| gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper                |
+| runlog     | `gcloud logging read "resource.type=cloud_run_revision"` wrapper |
+| runlist    | `gcloud run services list` wrapper                               |
+| runshow    | `gcloud run services describe` wrapper                           |
+| runupdate  | `gcloud run services update-traffic --to-latest` wrapper         |
+| runimlist  | `gcloud container images list-tags` wrapper                      |
+| runimshow  | `gcloud container images describe` wrapper                       |
+| runimdel   | `gcloud container images delete` wrapper                         |
+| runrevlist | `gcloud run revisions list` wrapper                              |
+| runrevshow | `gcloud run revisions describe` wrapper                          |
+| runrevch   | `gcloud run services update-traffic --to-revisions` wrapper      |
+| runrevdel  | `gcloud run revisions delete` wrapper                            |
 
 ### Networking
 
