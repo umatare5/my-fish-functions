@@ -99,6 +99,8 @@ omf install https://github.com/umatare5/my-fish-functions
 | gcstart    | `gcloud compute instance start` wrapper                          |
 | gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper                |
 | runlog     | `gcloud logging read "resource.type=cloud_run_revision"` wrapper |
+| runapplog  | Show only application log in `runlog`                            |
+| runsyslog  | Show only platform log in `runlog`                               |
 | runlist    | `gcloud run services list` wrapper                               |
 | runshow    | `gcloud run services describe` wrapper                           |
 | runupdate  | `gcloud run services update-traffic --to-latest` wrapper         |

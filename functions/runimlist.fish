@@ -19,5 +19,5 @@ function _has_over_two_arguments
 end
 
 function _gcloud_select_gcr_location_name -a locationName
-  test $locationName; and echo $locationName; or echo "asia.gcr.io";
+  test $locationName; and echo $locationName; or echo "asia-northeast1-docker.pkg.dev";
 end
