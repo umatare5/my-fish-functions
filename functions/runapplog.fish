@@ -19,7 +19,7 @@ function runapplog -a serviceName -a limit --description 'alias runapplog=gcloud
   echo $LOGS | \
     jq -c '.[].jsonPayload.app_name + ":" + .[].jsonPayload.message' | \
     jq -r . | grep -v "^\$" | uniq | \
-    jq -r '. | "\\(.timestampSeconds)\t\\(.severity)\t\\(.message)"' | grep -v "^\$"
+    jq -r '. | "\\(.timestampSeconds)\t\\(.severity)\t\\(.message)"' | grep -v "^\$" | sort
 end
 
 function _has_over_one_arguments
