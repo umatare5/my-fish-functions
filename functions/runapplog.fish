@@ -16,7 +16,7 @@ function runapplog -a serviceName -a limit --description 'alias runapplog=gcloud
     --format json
   )
 
-  echo $LOGS | jq -r '.[] | "\\(.jsonPayload.timestamp)\t\\(.jsonPayload.severity)\t\\(.jsonPayload.hostname)(.jsonPayload.message)"' | sort
+  echo $LOGS | jq -r '.[] | "\\(.jsonPayload.timestamp)\t\\(.jsonPayload.severity)\t\\(.jsonPayload.hostname) \\(.jsonPayload.message)"' | sort
 end
 
 function _has_over_one_arguments
