@@ -1,8 +1,8 @@
-function runjsonlog -a serviceName -a limit --description 'alias runjsonlog=gcloud logging read "resource.type=cloud_run_revision" --format json --limit'
+function runconlog -a serviceName -a limit --description 'alias runconlog=gcloud logging read "resource.type=cloud_run_revision" --format json --limit'
 
   # Validation
   if ! _has_over_one_arguments $argv
-    set_color red; echo "Syntax failed: runjsonlog serviceName"
+    set_color red; echo "Syntax failed: runconlog serviceName"
     return 1
   end
 
