@@ -10,10 +10,10 @@ function runapplog -a serviceName -a limit --description 'alias runapplog=gcloud
   set SERVICE_NAME $serviceName
 
   gcloud logging read \
-    "resource.type: cloud_run_revision AND resource.labels.service_name: $SERVICE_NAME AND (textPayload: * OR jsonPayload.message: *)" \
+    "resource.type: cloud_run_revision AND resource.labels.service_name: $SERVICE_NAME AND jsonPayload.message: *" \
     --limit (_gcloud_select_limit $limit) \
     --format json | \
-      jq -r '.[] | "\\(.timestamp)\t\\(.severity)\t\\(.textPayload)\t\\(.jsonPayload.message)"' | sort
+    jq -r '.[] | "\\(.timestamp)\t\\(.severity)\t\\(.jsonPayload.message)"' | sort
 end
 
 function _has_over_one_arguments
