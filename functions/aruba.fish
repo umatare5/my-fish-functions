@@ -81,27 +81,27 @@ end
 function _validate_aruba_function_preset_envvars
   if ! test $CENTRAL_CLIENT_ID
     echo "Missing environment variable CENTRAL_CLIENT_ID. Please set it."
-    continue
+    exit 1
   end
 
   if ! test $CENTRAL_CLIENT_SECRET
     echo "Missing environment variable CENTRAL_CLIENT_SECRET. Please set it."
-    continue
+    exit 1
   end
 
   if ! test $CENTRAL_API_BASE_URL
     echo "Missing environment variable CENTRAL_API_BASE_URL. Please set it."
-    continue
+    exit 1
   end
 
   if ! test $CENTRAL_GROUP
     echo "Missing environment variable CENTRAL_GROUP. Please set it."
-    continue
+    exit 1
   end
 
   if ! test -f $CENTRAL_CREDENTIAL_PATH
     echo "Missing $CENTRAL_CREDENTIAL_PATH. Please put it."
-    continue
+    exit 1
   end
 end
 
