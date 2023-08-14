@@ -38,6 +38,8 @@ omf install https://github.com/umatare5/my-fish-functions
   | bat              | [Link](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew): `brew install bat`                             |
   | ripgrep          | [Link](https://github.com/BurntSushi/ripgrep#installation): `brew install ripgrep`                                    |
   | tv               | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv`                              |
+  | jtbl             | [Link](https://github.com/kellyjonbrazil/jtbl#installation): `pip3 install jtbl`                                      |
+  | `                |
   | duf              | [Link](https://github.com/muesli/duf#macos): `brew install duf`                                                       |
   | git-jump         | [Link](https://github.com/mykolaharmash/git-jump#install): `brew tap mykolaharmash/git-jump && brew install git-jump` |
 
