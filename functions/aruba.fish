@@ -1,13 +1,13 @@
 function aruba -a subcommand --description "Describe configuration in Aruba Central"
   _validate_aruba_function_preset_envvars
 
-  set -x CENTRAL_CREDENTIAL_PATH ~/.config/aruba/central_credential.json
-  set -x CENTRAL_ACCESS_TOKEN  (cat $CENTRAL_CREDENTIAL_PATH | jq -r .access_token)
-  set -x CENTRAL_REFRESH_TOKEN (cat $CENTRAL_CREDENTIAL_PATH | jq -r .refresh_token)
-  set -x CENTRAL_API_BASE_URL  ""
-  set -x CENTRAL_GROUP         ""
-  set -x CENTRAL_API_OFFSET    "0"
-  set -x CENTRAL_API_LIMIT     "1000"
+  set -x CENTRAL_CREDENTIAL_PATH ""
+  set -x CENTRAL_ACCESS_TOKEN    (cat $CENTRAL_CREDENTIAL_PATH | jq -r .access_token)
+  set -x CENTRAL_REFRESH_TOKEN   (cat $CENTRAL_CREDENTIAL_PATH | jq -r .refresh_token)
+  set -x CENTRAL_API_BASE_URL    ""
+  set -x CENTRAL_GROUP           ""
+  set -x CENTRAL_API_OFFSET      "0"
+  set -x CENTRAL_API_LIMIT       "1000"
 
   _validate_aruba_function_additional_envvars
 
@@ -93,7 +93,7 @@ function _validate_aruba_function_preset_envvars
 
   if ! test $CENTRAL_CREDENTIAL_PATH
     echo "Missing $CENTRAL_CREDENTIAL_PATH. Please put it."
-    exit
+    abort
   end
 end
 
