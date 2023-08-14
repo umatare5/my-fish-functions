@@ -98,12 +98,12 @@ function _validate_aruba_function_preset_envvars
 end
 
 function _validate_aruba_function_additional_envvars
-  if ! test $CENTRAL_API_BASE_URL ==  ""
+  if test $CENTRAL_API_BASE_URL == ""
     echo "Missing environment variable CENTRAL_API_BASE_URL. Please set it."
     exit
   end
 
-  if ! test $CENTRAL_GROUP == ""
+  if test $CENTRAL_GROUP == ""
     echo "Missing environment variable CENTRAL_GROUP. Please set it."
     exit
   end
