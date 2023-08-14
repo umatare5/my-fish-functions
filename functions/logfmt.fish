@@ -14,4 +14,5 @@ function logfmt -a source
       jq -c '.[].jsonPayload.app_name + ":" + .[].jsonPayload.message' | \
       jq -r . | grep -v "^\$" | uniq | \
       jq -r '. | "\\(.timestampSeconds)\t\\(.severity)\t\\(.message)"' | grep -v "^\$" | sort
+  end
 end
