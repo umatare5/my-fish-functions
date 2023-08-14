@@ -1,11 +1,11 @@
 function aruba -a subcommand --description "Describe configuration in Aruba Central"
   _validate_aruba_function_preset_envvars
 
-  set -x CENTRAL_CREDENTIAL_PATH ""
+  set -x CENTRAL_CREDENTIAL_PATH
   set -x CENTRAL_ACCESS_TOKEN    (cat $CENTRAL_CREDENTIAL_PATH | jq -r .access_token)
   set -x CENTRAL_REFRESH_TOKEN   (cat $CENTRAL_CREDENTIAL_PATH | jq -r .refresh_token)
-  set -x CENTRAL_API_BASE_URL    ""
-  set -x CENTRAL_GROUP           ""
+  set -x CENTRAL_API_BASE_URL
+  set -x CENTRAL_GROUP
   set -x CENTRAL_API_OFFSET      "0"
   set -x CENTRAL_API_LIMIT       "1000"
 
@@ -91,20 +91,19 @@ function _validate_aruba_function_preset_envvars
     exit
   end
 
-  if ! test $CENTRAL_CREDENTIAL_PATH
+  if ! test $CENTRAL_API_BASE_URL
+    echo "Missing environment variable CENTRAL_API_BASE_URL. Please set it."
+    exit
+  end
+
+  if ! test $CENTRAL_GROUP
+    echo "Missing environment variable CENTRAL_GROUP. Please set it."
+    exit
+  end
+
+  if ! test -f $CENTRAL_CREDENTIAL_PATH
     echo "Missing $CENTRAL_CREDENTIAL_PATH. Please put it."
     abort
   end
 end
 
-function _validate_aruba_function_additional_envvars
-  if test $CENTRAL_API_BASE_URL == ""
-    echo "Missing environment variable CENTRAL_API_BASE_URL. Please set it."
-    exit
-  end
-
-  if test $CENTRAL_GROUP == ""
-    echo "Missing environment variable CENTRAL_GROUP. Please set it."
-    exit
-  end
-end
