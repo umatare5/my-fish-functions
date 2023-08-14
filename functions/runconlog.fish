@@ -9,17 +9,10 @@ function runconlog -a serviceName -a limit --description 'alias runconlog=gcloud
   # Run command
   set SERVICE_NAME $serviceName
 
-  set LOGS (
-    gcloud logging read \
+  gcloud logging read \
     "resource.type: cloud_run_revision AND resource.labels.service_name: $SERVICE_NAME AND jsonPayload.message: *" \
     --limit (_gcloud_select_limit $limit) \
     --format json
-  )
-
-  echo $LOGS | \
-    jq -c '.[].jsonPayload.app_name + ":" + .[].jsonPayload.message' | \
-    jq -r . | grep -v "^\$" | uniq | \
-    jq -r '. | "\\(.timestampSeconds)\t\\(.severity)\t\\(.message)"' | grep -v "^\$" | sort
 end
 
 function _has_over_one_arguments
