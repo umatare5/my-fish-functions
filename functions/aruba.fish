@@ -9,6 +9,8 @@ function aruba -a subcommand --description "Describe configuration in Aruba Cent
   set -x CENTRAL_API_OFFSET    "0"
   set -x CENTRAL_API_LIMIT     "1000"
 
+  _validate_aruba_function_additional_envvars
+
   switch $subcommand
 
     # list-group returns group list.
@@ -95,7 +97,7 @@ function _validate_aruba_function_preset_envvars
   end
 end
 
-function _validate_aruba_function_preset_envvars
+function _validate_aruba_function_additional_envvars
   if ! test $CENTRAL_API_BASE_URL ==  ""
     echo "Missing environment variable CENTRAL_API_BASE_URL. Please set it."
     exit
