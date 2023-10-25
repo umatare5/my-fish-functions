@@ -13,7 +13,7 @@ function hg -a resourceName -a resourceKey --description 'alias hg=rg --color ne
   for filename in (rg --color never --files-with-matches "resource \"$RESOURCE_NAME\"")
     for resource_id in (cat $filename | hcledit block list)
 
-    test $RESOURCE_KEY;
+    test $RESOURCE_KEY == "";
       cat $filename | hcledit attribute get $resource_id$RESOURCE_KEY
       cat $filename | hcledit block get $resource_id
 
