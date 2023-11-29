@@ -7,17 +7,16 @@ function runtail -a serviceName -a logFilter --description 'alias runtail=gcloud
         return 1
     end
 
-    set LOG_FILTER ""
-    if test $logFilter
-        set LOG_FILTER "--log-filter $logFilter"
-        echo $LOG_FILTER
-    end
-
     # Run command
     set SERVICE_NAME $serviceName
     set REGION_NAME asia-northeast1
 
-    gcloud beta run services logs tail $SERVICE_NAME --region $REGION_NAME $LOG_FILTER
+
+    if test $logFilter
+        gcloud beta run services logs tail $SERVICE_NAME --region $REGION_NAME --log-filter $logFilter
+    else
+        gcloud beta run services logs tail $SERVICE_NAME --region $REGION_NAME
+    end
 end
 
 function _has_over_one_arguments
