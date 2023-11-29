@@ -1,3 +1,3 @@
 function dc --wraps='docker container' --description 'alias dc=docker container'
-  docker container $argv; 
+    docker container $argv
 end

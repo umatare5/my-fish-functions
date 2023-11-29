@@ -1,3 +1,3 @@
 function xx --wraps=exit --description 'alias xx=exit'
-  exit $argv; 
+    exit $argv
 end
