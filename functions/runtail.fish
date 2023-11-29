@@ -9,7 +9,7 @@ function runtail -a serviceName -a logFilter --description 'alias runtail=gcloud
 
     set LOG_FILTER ""
     if test $logFilter
-        set LOG_FILTER ("--log-filter $logFilter")
+        set LOG_FILTER "--log-filter $logFilter"
     end
 
     # Run command
