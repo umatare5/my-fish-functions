@@ -39,7 +39,6 @@ omf install https://github.com/umatare5/my-fish-functions
   | ripgrep          | [Link](https://github.com/BurntSushi/ripgrep#installation): `brew install ripgrep`                                    |
   | tv               | [Link](https://github.com/uzimaru0000/tv/tree/master): `brew install uzimaru0000/tap/tv`                              |
   | jtbl             | [Link](https://github.com/kellyjonbrazil/jtbl#installation): `pip3 install jtbl`                                      |
-  | `                |
   | duf              | [Link](https://github.com/muesli/duf#macos): `brew install duf`                                                       |
   | git-jump         | [Link](https://github.com/mykolaharmash/git-jump#install): `brew tap mykolaharmash/git-jump && brew install git-jump` |
 
@@ -90,29 +89,30 @@ omf install https://github.com/umatare5/my-fish-functions
 
 ### Public Cloud: GCP
 
-| Command    | Description                                                      |
-| ---------- | ---------------------------------------------------------------- |
-| glogin     | `gcloud auth login` and `application-default login` wrapper      |
-| gtoken     | Print tokens issued by `glogin`                                  |
-| glist      | `gcloud config configurations list` wrapper                      |
-| gactivate  | `gcloud config configurations activate` wrapper                  |
-| gclist     | `gcloud compute instance list` wrapper                           |
-| gcstop     | `gcloud compute instance stop` wrapper                           |
-| gcstart    | `gcloud compute instance start` wrapper                          |
-| gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper                |
-| runlog     | `gcloud logging read "resource.type=cloud_run_revision"` wrapper |
-| runapplog  | Show only application log in `runlog`                            |
-| runsyslog  | Show only platform log in `runlog`                               |
-| runlist    | `gcloud run services list` wrapper                               |
-| runshow    | `gcloud run services describe` wrapper                           |
-| runupdate  | `gcloud run services update-traffic --to-latest` wrapper         |
-| runimlist  | `gcloud container images list-tags` wrapper                      |
-| runimshow  | `gcloud container images describe` wrapper                       |
-| runimdel   | `gcloud container images delete` wrapper                         |
-| runrevlist | `gcloud run revisions list` wrapper                              |
-| runrevshow | `gcloud run revisions describe` wrapper                          |
-| runrevch   | `gcloud run services update-traffic --to-revisions` wrapper      |
-| runrevdel  | `gcloud run revisions delete` wrapper                            |
+| Command    | Description                                                           |
+| ---------- | --------------------------------------------------------------------- |
+| glogin     | `gcloud auth login` and `application-default login` wrapper           |
+| gtoken     | Print tokens issued by `glogin`                                       |
+| glist      | `gcloud config configurations list` wrapper                           |
+| gactivate  | `gcloud config configurations activate` wrapper                       |
+| gclist     | `gcloud compute instance list` wrapper                                |
+| gcstop     | `gcloud compute instance stop` wrapper                                |
+| gcstart    | `gcloud compute instance start` wrapper                               |
+| gcssh      | `gcloud compute ssh --tunnel-through-iap` wrapper                     |
+| runlog     | `gcloud logging read "resource.type=cloud_run_revision"` wrapper      |
+| runapplog  | Show only application log in `runlog`                                 |
+| runsyslog  | Show only platform log in `runlog`                                    |
+| runtail    | `gcloud beta run services logs tail --region asia-northeast1` wrapper |
+| runlist    | `gcloud run services list` wrapper                                    |
+| runshow    | `gcloud run services describe` wrapper                                |
+| runupdate  | `gcloud run services update-traffic --to-latest` wrapper              |
+| runimlist  | `gcloud container images list-tags` wrapper                           |
+| runimshow  | `gcloud container images describe` wrapper                            |
+| runimdel   | `gcloud container images delete` wrapper                              |
+| runrevlist | `gcloud run revisions list` wrapper                                   |
+| runrevshow | `gcloud run revisions describe` wrapper                               |
+| runrevch   | `gcloud run services update-traffic --to-revisions` wrapper           |
+| runrevdel  | `gcloud run revisions delete` wrapper                                 |
 
 ### Networking
 
