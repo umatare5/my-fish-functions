@@ -1,9 +1,9 @@
-function rundevlog -a serviceName -a limit --description 'alias rundevlog=gcloud logging read "resource.type=cloud_run_revision" --format json --limit'
+function runreqlog -a serviceName -a limit --description 'alias runreqlog=gcloud logging read "resource.type=cloud_run_revision" --format json --limit'
 
     # Validation
     if ! _has_over_one_arguments $argv
         set_color red
-        echo "Syntax failed: rundevlog serviceName"
+        echo "Syntax failed: runreqlog serviceName"
         return 1
     end
 
@@ -14,8 +14,8 @@ function rundevlog -a serviceName -a limit --description 'alias rundevlog=gcloud
     gcloud logging read " \
       resource.type=cloud_run_revision AND \
       resource.labels.service_name=$SERVICE_NAME AND \
-      logName=projects/$GCP_PROJECT_ID/logs/run.googleapis.com%2F%2Fdev%2Flog \
-    " --limit (_gcloud_select_limit $limit) --format json | jq -r '.[] | "\(.timestamp)\\t\(.jsonPayload)"'
+      logName=projects/$GCP_PROJECT_ID/logs/run.googleapis.com%2Frequests \
+    " --limit (_gcloud_select_limit $limit) --format json | jq -r '.[] | "\(.timestamp)\\t\(.severity)\\t\(.httpRequest)"'
 end
 
 function _has_over_one_arguments
