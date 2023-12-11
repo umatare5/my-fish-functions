@@ -8,6 +8,7 @@ function runapplog -a serviceName -a limit --description 'alias runapplog=gcloud
     end
 
     # Run command
+    set GCP_PROJECT_ID (gcloud config get-value project)
     set SERVICE_NAME $serviceName
 
     gcloud logging read "\
