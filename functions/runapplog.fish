@@ -18,7 +18,8 @@ function runapplog -a serviceName -a limit --description 'alias runapplog=gcloud
         projects/$GCP_PROJECT_ID/logs/run.googleapis.com%2Fstderr OR \
         projects/$GCP_PROJECT_ID/logs/run.googleapis.com%2Fstdout
       )" --limit (_gcloud_select_limit $limit) --format json \
-        | jq -r '.[] | if .textPayload then "\(.timestamp)\\t\(.textPayload)" else "\(.timestamp)\\t\(.jsonPayload)" end'
+        | jq -r '.[] | if .textPayload then "\(.timestamp)\\t\(.textPayload)" else "\(.timestamp)\\t\(.jsonPayload)" end' \
+        | sort
 end
 
 function _has_over_one_arguments

@@ -15,7 +15,8 @@ function runauditlog -a serviceName -a limit --description 'alias runauditlog=gc
       resource.type=cloud_run_revision AND \
       resource.labels.service_name=$SERVICE_NAME AND \
       logName=projects/$GCP_PROJECT_ID/logs/cloudaudit.googleapis.com%2Factivity \
-    " --limit (_gcloud_select_limit $limit) --format json | jq -r '.[] | "\(.timestamp)\\t\(.protoPayload.authorizationInfo[0].permission)\\t\(.protoPayload.resourceName)\\t\(.protoPayload.requestMetadata)"'
+    " --limit (_gcloud_select_limit $limit) --format json | jq -r '.[] | "\(.timestamp)\\t\(.protoPayload.authorizationInfo[0].permission)\\t\(.protoPayload.resourceName)\\t\(.protoPayload.requestMetadata)"' \
+        | sort
 end
 
 function _has_over_one_arguments
