@@ -16,7 +16,7 @@ function rundevlog -a serviceName -a limit --description 'alias rundevlog=gcloud
       resource.labels.service_name=$SERVICE_NAME AND \
       logName=projects/$GCP_PROJECT_ID/logs/run.googleapis.com%2F%2Fdev%2Flog \
     " --limit (_gcloud_select_limit $limit) --format json | jq -r '.[].jsonPayload | .timestamp + "\t" + .hostname + "\t" + "{\"unixtime\":" + .message' \
-        | sort
+        | sort | grep -v "^\$"
 end
 
 function _has_over_one_arguments
