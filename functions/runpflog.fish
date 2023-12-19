@@ -1,9 +1,9 @@
-function runaudlog -a serviceName -a limit --description 'alias runaudlog=gcloud logging read "resource.type=cloud_run_revision" --format json --limit'
+function runpflog -a serviceName -a limit --description 'alias runpflog=gcloud logging read "resource.type=cloud_run_revision" --format json --limit'
 
     # Validation
     if ! _has_over_one_arguments $argv
         set_color red
-        echo "Syntax failed: runaudlog serviceName"
+        echo "Syntax failed: runpflog serviceName"
         return 1
     end
 
