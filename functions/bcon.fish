@@ -3,7 +3,7 @@ function bcon --wraps='/System/Library/PrivateFrameworks/Apple80211.framework/Ve
         {
           "name": ._name,
           "security": (.spairport_security_mode | sub("s?pairport_security_mode_"; "")),
-          "channel": (.spairport_network_channel | split(" ")[0] + " ch"),
+          "channel": (.spairport_network_channel | split(" ")[0] | tonumber),
           "channelBand": (.spairport_network_channel | split(" ")[1] | sub("[(]"; "") | sub("GHz"; " GHz") | sub("[,]"; "")),
           "channelWidth": (.spairport_network_channel | split(" ")[2] | sub("[)]"; "") | sub("MHz"; " MHz")),
           "signal": (.spairport_signal_noise | split(" / ")[0] | sub (" dBm"; "") + " dBm"),
